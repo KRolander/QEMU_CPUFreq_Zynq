@@ -193,6 +193,29 @@ cd ${CUSTOMDIR_WORKENV}
 QEMU/qemu/arm-softmmu/qemu-system-arm -M xilinx-zynq-a9 -serial /dev/null -serial mon:stdio -display none -kernel linux_kernel/uImage -dtb device_tree/my_devicetree.dtb --initrd file_system/umy_ramdisk.image.gz
 ```
 
+
+
+### CPUfreq commands
+
+Set frequency scailing governor as userspace
+```bash
+echo userspace > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+```
+Show available frequencies
+```bash
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies
+```
+
+Show current frequency
+```bash
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+```
+
+Set userspace frequency
+```bash
+echo $freqValue > /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
+
+
 ### Recommended projects and documents
 
 Installing Embedded Linux on ZedBoard by Associate Professor Clément Foucher
