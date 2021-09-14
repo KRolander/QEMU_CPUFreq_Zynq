@@ -21,7 +21,7 @@ sudo apt-get install gcc g++ git qt4-dev-tools flex bison patch libncurses5-dev 
 sudo dpkg -i force-architecture i386 glibc
 ```
 ### Cross-compile tools
-For comiling Xilinx tools the version of gcc sould be >= 6.O, I recommande to use gcc ARM tools, that you can find [Here] (https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads)
+For comiling Xilinx tools the version of gcc sould be >= 6.O, I recommande to use gcc ARM tools, that you can find at (https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads)
 
 ### Create a work environment 
 In the following steps we download Xilinx tools and the Xilinx-Linux kernel. The ${CUSTOMDIR_WORKENV} variable is the path to your work environment (that you can initialize how you wish).
@@ -35,7 +35,7 @@ mkdir file_system
 mkdir linux_kernel
 ```
 ### Download gcc ARM tools: 
-Go to [Here] (https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads) and download this version gcc-arm-8.2-2018.11-x86_64-arm-linux-gnueabi.tar.xz, copy this file to your work environment.
+Go to (https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads) and download this version gcc-arm-8.2-2018.11-x86_64-arm-linux-gnueabi.tar.xz, copy this file to your work environment.
 
 Extract the tools (gcc-arm-8.2-2018.11-x86_64-arm-linux-gnueabi.tar.xz)
 
@@ -101,7 +101,7 @@ After compiling you find the uImage at arch/arm/boot/uImage that we copy to the 
 
 ### Create Root File System:
 
-In this step we create a uramdisk.image.gz containing our rootfs and uImage, this uramdisk.image.gz would be used by QEMU(--initrd parameter). The basic file system was taken from a prebuilt ZedBoard project of Xilinx, you can download this project [Here] (https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18842326/Zynq+2016.4+Release) 
+In this step we create a uramdisk.image.gz containing our rootfs and uImage, this uramdisk.image.gz would be used by QEMU(--initrd parameter). The basic file system was taken from a prebuilt ZedBoard project of Xilinx, you can download this project (https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18842326/Zynq+2016.4+Release) 
 
 ```bash
 mkdir file_system
