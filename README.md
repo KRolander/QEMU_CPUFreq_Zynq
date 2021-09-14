@@ -14,8 +14,7 @@ Note: Our aim is to emulate the xilinx-zynq-a9 on QEMU and using a small size Li
 If you don't want to build your own Linux Kernel, root file system and DTS, in `Prebuilt_functional` you can find the Kernel image, root file system and DTS -> DTB that can be used to QEMU emuation. 
 
 
-
-### Compile tools
+### Compile tools
 
 ```bash
 sudo apt-get install gcc g++ git qt4-dev-tools flex bison patch libncurses5-dev libssl-dev gparted device-tree-compiler
@@ -57,7 +56,7 @@ make my_zynq_defconfig
 make
 ```
 
-### Download Linux Kernel and cross-compile Linux for ARM architecture to obtain a uImage:
+### Download Linux Kernel and cross-compile Linux for ARM architecture to obtain a uImage:
 
 You have two choices you can use the standard Linux Kernel or the Linux Xilinx Kernel, it is up to you..
 
@@ -100,7 +99,7 @@ cp /arch/arm/boot/uImage ..
 
 After compiling you find the uImage at arch/arm/boot/uImage that we copy to the linux_kernel repertory (to make easier the access to your uImage)
 
-### Create Root File System:
+### Create Root File System:
 
 In this step we create a uramdisk.image.gz containing our rootfs and uImage, this uramdisk.image.gz would be used by QEMU(--initrd parameter). The basic file system was taken from a prebuilt ZedBoard project of Xilinx, you can download this project [Here] (https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18842326/Zynq+2016.4+Release) 
 
@@ -186,7 +185,7 @@ git submodule update --recursive
 make -j4
 ```
 
-### Emulation of xilinx-zynq-a9 on QEMU
+### Emulation of xilinx-zynq-a9 on QEMU
 
 ```bash
 cd ${CUSTOMDIR_WORKENV}
