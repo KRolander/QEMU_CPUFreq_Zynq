@@ -1,4 +1,4 @@
-# QEMU_CPUFreq_Zynq
+# QEMU CPUFreq Zynq
 
 ## Frequency scaling (CPUFreq) on Xilinx Zynq Platform Baseboard for Cortex-A9 emulated by QEMU
 
